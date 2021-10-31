@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Boggle{% endblock %}
+
+{% block content %}
+    <div class="game-board">
+        <div class="header">
+            <div class="timer-container">
+                <h2>Timer: <span class="timer"></span></h2>
+            </div>
+            <div class="scoreboard">
+                <h2>Score: <span class="score">0</span></h2>
+            </div>
+        </div>
+        <div class="word-submission">
+            <form>
+                <label for="guess">Submit a word:</label>
+                <input name="guess" type="text" placeholder="Submit a word" />
+            </form>
+            <div>
+                <p class="message"></p>
+            </div>
+        </div>
+        {% for row in boggle_board %}
+            <div class="boggle-row">
+                {% for letter in row %}
+                    <div class="boggle-letter">
+                        {{letter}}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

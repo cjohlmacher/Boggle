@@ -1,0 +1,114 @@
+body {
+    background-color: pink;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner {
+    color: rgb(71, 108, 121);
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flash-red {
+    animation-name: flash-red;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+  }
+  
+@keyframes flash-red {
+50% {
+    background-color: rgba(221, 33, 33, 0.5);
+}
+100% {
+    background-color: '';
+}
+}
+
+.flash-green {
+    animation-name: flash-green;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+  }
+  
+@keyframes flash-green {
+50% {
+    background-color: rgba(31, 221, 33, 0.5);
+}
+100% {
+    background-color: '';
+}
+}
+
+.flash-blue {
+    animation-name: flash-blue;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+  }
+  
+@keyframes flash-blue {
+50% {
+    background-color: rgba(31, 31, 221, 0.5);
+}
+100% {
+    background-color: '';
+}
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.header * {
+    margin: 0px 5px;
+}
+
+.word-submission {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 0px 5px;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boggle-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.boggle-letter {
+    background-color: rgb(71, 177, 212);
+    border-radius: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 3rem;
+    width: 5vw;
+    height: 5vw;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 0px 0px darkblue
+}
